@@ -1,7 +1,6 @@
 /*Write a script that simulates a basic calculator. It should take two operands and an operator ('+', '-', '*', '/') from the user, perform the operation, and log the result.*/
-
 //Basic Calculator
-import inquirer from "inquirer"
+import inquirer from "inquirer";
 const question = await inquirer.prompt([
     {
         type: "number",
@@ -17,7 +16,7 @@ const question = await inquirer.prompt([
         type: "list",
         name: "operator",
         message: "Select Yout Operator: ",
-        choices: ["+", "-", "*", "/"], 
+        choices: ["+", "-", "*", "/"],
     },
-])
-console.log(`Question: ${question}`)
+]);
+console.log(`Question: ${question}`);
