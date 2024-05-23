@@ -2,6 +2,7 @@
   "dependencies": {
     "inquirer": "^9.2.22"
   },
+  "type": "module",
   "devDependencies": {
     "@types/inquirer": "^9.0.7"
   }
