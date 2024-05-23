@@ -20,15 +20,17 @@ const question = await inquirer.prompt([
     },
 ]);
 //console.log(`Question: ${question}`)
+let num1 = question.operand1;
+let num2 = question.operand2;
 if (question.operator === '+') {
-    console.log("Sum");
+    console.log(`Addition -> ${num1} + ${num2} is: ${num1 + num2}`);
 }
 else if (question.operator === '-') {
-    console.log("Subtract");
+    console.log(`Subtraction -> ${num1} - ${num2} is: ${num1 - num2}`);
 }
 else if (question.operator === '*') {
-    console.log("Multiplication");
+    console.log(`Multiplication -> ${num1} * ${num2} is: ${num1 * num2}`);
 }
 else if (question.operator === '/') {
-    console.log("Division");
+    console.log(`Division -> ${num1} / ${num2} is: ${num1 / num2}`);
 }
