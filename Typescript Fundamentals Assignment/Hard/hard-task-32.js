@@ -1,4 +1,3 @@
-"use strict";
 /*Create a 'to-do list' array of objects where each object has properties task and completed
 (a boolean). Write a function to log only the tasks that are not yet completed.*/
 function yetToDo(array) {
@@ -48,3 +47,4 @@ let to_do_list = [
     }
 ];
 console.log("Tasks that are yet to do are:", yetToDo(to_do_list));
+export {};
