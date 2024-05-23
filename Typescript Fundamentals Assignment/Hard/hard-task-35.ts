@@ -20,4 +20,13 @@ const question = await inquirer.prompt([
         choices: ["+", "-", "*", "/"], 
     },
 ])
-console.log(`Question: ${question}`)
+//console.log(`Question: ${question}`)
+if(question.operator === '+'){
+    console.log("Sum")
+} else if(question.operator === '-'){
+    console.log("Subtract")
+} else if(question.operator === '*'){
+    console.log("Multiplication")
+} else if(question.operator === '/'){
+    console.log("Division")
+}
