@@ -1,0 +1,1 @@
+var greet: string = "AoA"
