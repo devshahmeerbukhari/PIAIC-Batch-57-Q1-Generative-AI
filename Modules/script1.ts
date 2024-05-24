@@ -1,1 +1,3 @@
-var greet: string = "AoA"
+let greet: string = "AoA";
+console.log("Script 1")
+//export {greet}

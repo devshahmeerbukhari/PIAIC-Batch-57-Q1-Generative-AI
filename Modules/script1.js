@@ -1,2 +1,4 @@
 "use strict";
-var greet = "AoA";
+let greet = "AoA";
+console.log("Script 1");
+//export {greet}
