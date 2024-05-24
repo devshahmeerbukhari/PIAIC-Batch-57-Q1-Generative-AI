@@ -2,6 +2,7 @@
 
 //Basic Calculator
 import inquirer from "inquirer"
+import {addition, subtraction, multiplication, division} from './components/calculate.js'
 const question = await inquirer.prompt([
     {
         type: "number",
@@ -21,14 +22,12 @@ const question = await inquirer.prompt([
     },
 ])
 //console.log(`Question: ${question}`)
-let num1: number = question.operand1
-let num2: number = question.operand2
 if(question.operator === '+'){
-    console.log(`Addition -> ${num1} + ${num2} is: ${num1 + num2}`)
+    addition(question.operand1, question.operand2)
 } else if(question.operator === '-'){
-    console.log(`Subtraction -> ${num1} - ${num2} is: ${num1 - num2}`)
+    subtraction(question.operand1, question.operand2)
 } else if(question.operator === '*'){
-    console.log(`Multiplication -> ${num1} * ${num2} is: ${num1 * num2}`)
+    multiplication(question.operand1, question.operand2)
 } else if(question.operator === '/'){
-    console.log(`Division -> ${num1} / ${num2} is: ${num1 / num2}`)
+    division(question.operand1, question.operand2)
 }
