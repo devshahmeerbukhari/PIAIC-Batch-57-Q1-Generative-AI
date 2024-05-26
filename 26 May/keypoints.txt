@@ -1,0 +1,27 @@
+Structal Typing
+- Object Literals or Fresh Object: Initially assignment values should have the same structure
+    var x: {foo: number}
+    x = {foo: 1, bar: 10} => Error will occure
+    var y: {foo: number, bar: 10}
+    x = y =>Here no error will occure
+- Stail Object of interfaces: Swaping values afer declaration
+
+- Following is the Object destrustion
+myType = {
+    name: "Shahmeer",
+    age: 10
+}
+const {name} = myType
+
+
+- Access the values of Object with object.entries
+
+- Permiataticve Datatypes: 
+- Special Datatypes: Any, unknown, never
+
+- Typecasting
+    Two ways:
+        - AngleBracktes <Datatypes>
+        - using as (var1 as string)
+
+- Enum
