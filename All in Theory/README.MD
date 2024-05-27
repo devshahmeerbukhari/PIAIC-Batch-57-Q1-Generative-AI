@@ -8,7 +8,7 @@
     - Example:
         let greeting: string = "Hello";
         console.log(greeting.toUpperCase());  // Converts all letters to uppercase
-
+    - Boxing is a temporary wrapping of primitive values in object wrappers, which provides access to methods and properties.
 ## List of Primitive Datatypes is:
     - String
     - Number
