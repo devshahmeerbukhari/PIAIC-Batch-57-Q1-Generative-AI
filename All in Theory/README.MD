@@ -35,3 +35,18 @@
             "key1" : "Value1",
             "Key2" : "Value2" 
         }
+
+# Strongly Typed Syntax
+    - In Strongly Typed Syntax, you explicetly set the type of variable, function, or return type of a function.
+    - Strongly typed syntax in TypeScript ensures that if you try to assign a value of a different data type to a variable, function parameter, or return value, the compiler will raise an error at compile-time, preventing the code from compiling.
+    - This helps catch errors early in the development process, making the code more maintainable, scalable, and less prone to type-related bugs.
+    - For Example:
+        let name: string = "Shahmeer"
+        name = 12, here it will throw an error because while declaring the variable name, we have set the type string. And we can not assign a number value to it..
+    - We can not chnage it's type witout explicit casting..
+
+# Type Inference 
+    - In Type Inference we do not set the type of variable explicetly, but while initializing the value to a variable, it automatically set the type of variable according the to initial value type.
+    - For example:
+        let age = 22, here type is set to number
+        age = "Twenty-Two", here also it will throw an error, because it implicetly set the value of type number while initiall value. 
