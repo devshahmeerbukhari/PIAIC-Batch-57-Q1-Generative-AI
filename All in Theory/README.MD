@@ -80,4 +80,12 @@
     - It can be redeclared and updated.
     - It is hoisted to the top of the scope, meaning it is moved to the top of the script regardless of where it is declared.
 
-
+# Hoisting:
+    - In JavaScript and TypeScript, hoisting refers to the behavior of moving the declaration of a variable or function to the top of its scope, regardless of where it is actually written in the code.
+    - In other words, when a variable or function is declared, it is "hoisted" to the top of its scope, making it accessible from anywhere within that scope, even before it is actually declared.
+    - Here's an example:
+        console.log(x); // prints undefined
+        var x = 10;
+    - Even though the console.log statement comes before the declaration of x, the variable x is still accessible because it is "hoisted" to the top of the scope.
+    - Note that hoisting only moves the declaration, not the assignment. So in the example above, x is declared at the top, but it is still assigned the value 10 only after the var x = 10 statement.
+    - Hoisting can sometimes lead to unexpected behavior, especially when using var declarations. That's one of the reasons why let and const were introduced in modern JavaScript, as they do not have the same hoisting behavior as var.
