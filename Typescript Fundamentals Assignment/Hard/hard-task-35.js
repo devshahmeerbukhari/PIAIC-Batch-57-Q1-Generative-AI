@@ -1,8 +1,13 @@
+"use strict";
 /*Write a script that simulates a basic calculator. It should take two operands and an operator ('+', '-', '*', '/') from the user, perform the operation, and log the result.*/
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 //Basic Calculator
-import inquirer from "inquirer";
-import { addition, subtraction, multiplication, division } from './components/calculate.js';
-const question = await inquirer.prompt([
+const inquirer_1 = __importDefault(require("inquirer"));
+const calculate_js_1 = require("./components/calculate.js");
+const question = await inquirer_1.default.prompt([
     {
         type: "number",
         name: "operand1",
@@ -22,14 +27,14 @@ const question = await inquirer.prompt([
 ]);
 //console.log(`Question: ${question}`)
 if (question.operator === '+') {
-    addition(question.operand1, question.operand2);
+    (0, calculate_js_1.addition)(question.operand1, question.operand2);
 }
 else if (question.operator === '-') {
-    subtraction(question.operand1, question.operand2);
+    (0, calculate_js_1.subtraction)(question.operand1, question.operand2);
 }
 else if (question.operator === '*') {
-    multiplication(question.operand1, question.operand2);
+    (0, calculate_js_1.multiplication)(question.operand1, question.operand2);
 }
 else if (question.operator === '/') {
-    division(question.operand1, question.operand2);
+    (0, calculate_js_1.division)(question.operand1, question.operand2);
 }

@@ -50,3 +50,34 @@
     - For example:
         let age = 22, here type is set to number
         age = "Twenty-Two", here also it will throw an error, because it implicetly set the value of type number while initiall value. 
+
+# different b/w let, var, and const
+
+## let:
+    - let declares a variable that has a block scope (e.g., inside an if statement or a for loop).
+    - It can be updated but not redeclared.
+    - It is not hoisted to the top of the scope, so it must be declared before it is used.
+
+## const:
+    - const is similar to let in terms of scope and hoisting behavior, but it has some additional characteristics:
+    - const declares a constant variable that cannot be reassigned/change
+    - It has block scope, just like let.
+    - It is not hoisted to the top of the scope, so it must be declared before it is used.
+    - Once a value is assigned to a const variable, it cannot be changed.
+    - const variables must be initialized when they are declared.
+    - Example:
+        const PI = 3.14;
+        PI = 42; // Error: Assignment to constant variable.
+    - Note that const only makes the variable itself immutable, not the value it holds. If the value is an object or an array, its properties or elements can still be modified.
+    - Example:
+        const person = { name: 'John' };
+        person.name = 'Jane'; // This is allowed
+    - But reassigning the person variable itself would result in an error:
+    - Example:
+        person = { name: 'Jane' }; // Error: Assignment to constant variable.
+## var:
+    - var declares a variable that has a function scope.
+    - It can be redeclared and updated.
+    - It is hoisted to the top of the scope, meaning it is moved to the top of the script regardless of where it is declared.
+
+

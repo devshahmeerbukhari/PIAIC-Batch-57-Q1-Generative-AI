@@ -1,3 +1,4 @@
+"use strict";
 /*Develop a function that takes two inputs, a string and a character,
 and returns the number of times the character appears in the string.*/
 function occuranceCountOfACharacter(string, targetChar) {
@@ -22,4 +23,3 @@ let string = "Muhammad Shahmeer Bukhari";
 let targetChar = "a";
 let result1 = occuranceCountOfACharacter(string, targetChar);
 console.log(`'${targetChar}' character occured ${result1} time in string: ${string}`);
-export {};
