@@ -17,3 +17,14 @@
     - Bigint 
     - Symbol
     - Null
+
+# Non Primitive Datatypes
+    - Datatypes that are object, and hold multiple values, and have properties and mrthods.
+
+## List of Non Primitive Datatypes
+    - Objects
+    - Array
+    - Tupple
+    - Functions
+    - Enum
+    - Interface
