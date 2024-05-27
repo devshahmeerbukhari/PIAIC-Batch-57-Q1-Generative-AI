@@ -20,7 +20,6 @@
 
 # Non Primitive Datatypes
     - Datatypes that are object, and hold multiple values, and have properties and mrthods.
-
 ## List of Non Primitive Datatypes
     - Objects
     - Array
@@ -28,3 +27,11 @@
     - Functions
     - Enum
     - Interface
+    -Example:
+        let var1: number[] = [1, 2, 3, 4]
+        let var2: string[] = ["Hello", "World"]
+        let var3: any[] = [1, "Hello", 2, "World"]
+        let Obj = {
+            "key1" : "Value1",
+            "Key2" : "Value2" 
+        }
