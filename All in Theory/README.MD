@@ -115,7 +115,7 @@
 
         2.  console.log(y2)                         Encounter Error
             var y2: number = 20
-                - When we add a type annotation, TypeScript enables a feature called "definite assignment assertion" (see https://www.typescriptlang.org/docs/handbook/2/classes.html#definite-assignment-assertion). This means that TypeScript will error if a variable is used before it's been assigned a value.
+                - When we add a type annotation, TypeScript enables a feature called "definite assignment assertion". This means that TypeScript will error if a variable is used before it's been assigned a value.
                 - In above case, since y2 has a type annotation : number, TypeScript is enforcing definite assignment assertion, and since y2 is used before it's been assigned a value, it throws an error.
                 - If you remove the type annotation : number from y2, the error will go away, and you'll see the familiar undefined behavior.
                 - So, in short, the error is due to the combination of var hoisting and the : number type annotation, which enables definite assignment assertion.
