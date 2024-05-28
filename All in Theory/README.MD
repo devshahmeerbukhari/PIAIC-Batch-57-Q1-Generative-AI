@@ -140,6 +140,44 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
 ## Modules in TypeScript
     - There are three main things to consider when writing module-based code in TypeScript:
         - Syntax: What syntax do I want to use to import and export things?
+            - In TypeScript, you can use ES6-style/ECMAScript syntax for importing and exporting modules. This is the most common and recommended approach.
+            - Example:  
+
+                ES, ES6 or ECMAScript Syntax:
+                // module.js
+                export const name = "ES6 Module";
+                export function greet(user) {
+                return `Hello, ${user}!`;
+                }
+
+                // app.js
+                import { greet, name } from './module.js';
+                OR
+                import * as data from './module.js';
+                here we will access variables or fun like this: data.greet(), data.name
+
+                console.log(name); // Outputs: ES6 Module
+                console.log(greet('Shahmeer')); // Outputs: Hello, Shahmeer!
+
+                CommonJs Syntax:
+                export.ts
+                function absolute(num: number) {
+                if (num < 0) return num * -1;
+                return num;
+                }
+                
+                module.exports = {
+                    pi: 3.14,
+                    squareTwo: 1.41,
+                    phi: 1.61,
+                    absolute,
+                };
+
+                Import.ts
+                const maths = require("./maths");
+                maths.pi;
+
+
         - Module Resolution: What is the relationship between module names (or paths) and files on disk?
         - Module Output Target: What should my emitted JavaScript module look like?
     
