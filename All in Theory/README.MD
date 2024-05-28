@@ -57,6 +57,35 @@
     - let declares a variable that has a block scope (e.g., inside an if statement or a for loop).
     - It can be updated but not redeclared within the same scope.
     - It is not hoisted to the top of the scope, so it must be declared before it is used.
+    - For Example:
+        function demoLet() {
+            console.log(i); // Error: Cannot find name 'i' because it is not hoisted
+            if (true) {
+                let i = "Hello, world!";
+                console.log(i); // Output: Hello, world!
+            }
+            console.log(i); // Error: 'i' is not accessible here because it's outside the block
+        }
+
+        demoLet();
+
+        function redeclareTest() {
+            let j = 10;
+            console.log(j); // Output: 10
+            let j = 20; // Error: Identifier 'j' has already been declared
+        }
+
+        redeclareTest();
+
+        function updateTest() {
+            let k = 15;
+            console.log(k); // Output: 15
+            k = 20;
+            console.log(k); // Output: 20
+        }
+
+        updateTest();
+
 
 ## const:
     - const is similar to let in terms of scope and hoisting behavior, but it has some additional characteristics:
