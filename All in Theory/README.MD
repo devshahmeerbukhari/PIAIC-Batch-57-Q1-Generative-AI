@@ -179,5 +179,16 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
 
 
         - Module Resolution: What is the relationship between module names (or paths) and files on disk?
+            - Node Resolution
+            - Classic Resolution (Yet to study in depth)
         - Module Output Target: What should my emitted JavaScript module look like?
-    
+            - The module output target determines the module system for the JavaScript output by the TypeScript compiler. Common output targets include:
+                - CommonJS (CJS): Useful for Node.js applications.
+                - ES Modules (ESM): Suitable for modern browsers and tooling.
+                - AMD, UMD, SystemJS: Other formats used in specific environments.
+                - You specify the module target in your tsconfig.json:
+                -   {
+                        "compilerOptions": {
+                            "module": "commonjs"
+                        }
+                    }
