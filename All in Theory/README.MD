@@ -108,6 +108,18 @@
     - var declares a variable that has a function scope.
     - It can be redeclared and updated.
     - It is hoisted to the top of the scope, meaning it is moved to the top of the script regardless of where it is declared.
+    - Example:
+        1.  console.log("Value of y1 is: ", y1)     //Value of y1 is: undefined
+            var y1 = 10                             //It will work correctly
+            console.log("Value of y1 is: ", y1)     //Value of y1 is: 10
+
+        2.  console.log(y2)                         Encounter Error
+            var y2: number = 20
+                - When we add a type annotation, TypeScript enables a feature called "definite assignment assertion" (see https://www.typescriptlang.org/docs/handbook/2/classes.html#definite-assignment-assertion). This means that TypeScript will error if a variable is used before it's been assigned a value.
+                - In above case, since y2 has a type annotation : number, TypeScript is enforcing definite assignment assertion, and since y2 is used before it's been assigned a value, it throws an error.
+                - If you remove the type annotation : number from y2, the error will go away, and you'll see the familiar undefined behavior.
+                - So, in short, the error is due to the combination of var hoisting and the : number type annotation, which enables definite assignment assertion.
+
 
 # Hoisting:
     - In JavaScript and TypeScript, hoisting refers to the behavior of moving the declaration of a variable or function to the top of its scope, regardless of where it is actually written in the code.
