@@ -130,3 +130,16 @@
     - Even though the console.log statement comes before the declaration of x, the variable x is still accessible because it is "hoisted" to the top of the scope.
     - Note that hoisting only moves the declaration, not the assignment. So in the example above, x is declared at the top, but it is still assigned the value 10 only after the var x = 10 statement.
     - Hoisting can sometimes lead to unexpected behavior, especially when using var declarations. That's one of the reasons why let and const were introduced in modern JavaScript, as they do not have the same hoisting behavior as var.
+
+# Modules
+In TypeScript, modules are a powerful feature that helps in organizing and structuring code, especially in large applications.
+    - In TypeScript, just as in ECMAScript 2015, any file containing a top-level import or export is considered a module.
+    - Conversely, a file without any top-level import or export declarations is treated as a script whose contents are available in the global scope (and therefore to modules as well).
+    - If you have a file that doesn’t currently have any imports or exports, but you want to be treated as a module, add the line: export {};
+
+## Modules in TypeScript
+    - There are three main things to consider when writing module-based code in TypeScript:
+        - Syntax: What syntax do I want to use to import and export things?
+        - Module Resolution: What is the relationship between module names (or paths) and files on disk?
+        - Module Output Target: What should my emitted JavaScript module look like?
+    
