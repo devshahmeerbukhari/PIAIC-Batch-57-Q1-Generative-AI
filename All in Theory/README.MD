@@ -55,7 +55,7 @@
 
 ## let:
     - let declares a variable that has a block scope (e.g., inside an if statement or a for loop).
-    - It can be updated but not redeclared.
+    - It can be updated but not redeclared within the same scope.
     - It is not hoisted to the top of the scope, so it must be declared before it is used.
 
 ## const:
