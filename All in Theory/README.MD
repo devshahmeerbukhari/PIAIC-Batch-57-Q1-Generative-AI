@@ -193,7 +193,7 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
                         }
                     }
 
-# Chalk (yet to study in depth)
+# Chalk (yet to study in depth: Chalk Levels etc)
     - npm install chalk
     - const chalk = require('chalk');
         console.log(chalk.bold.italic.yellow("Hello, Yellow Chalk in blod italic style"))
@@ -203,4 +203,22 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
     - Chalk's composable API makes it easy to create complex styles by combining smaller styles in a readable and flexible way!
     - Chain styles and call the last one as a method with a string argument. Order doesn't matter, and later styles take precedent in case of a conflict. This simply means that chalk.red.yellow.green is equivalent to chalk.green.
 
-## Chalk Levels
+# Union Types/Literals:
+    - The first way to combine types you might see is a union type. A union type is a type formed from two or more other types, representing values that may be any one of those types. We refer to each of these types as the union’s members.
+    - TypeScript will only allow an operation if it is valid for every member of the union. For example, if you have the union string | number, you can’t use methods that are only available on string:
+    - For example:
+        function printId(id: number | string) {
+            console.log(id.toUpperCase());
+            //Property 'toUpperCase' does not exist on type 'string | number'.
+            //Property 'toUpperCase' does not exist on type 'number'.
+        }
+    - And if you check the type of the variable, then you can apply it's method
+    - For Example:
+        function printId(id: number | string){
+            if(typeof(id) === "string"){
+                console.log(id.toUpperCase())
+                //this will throw no error, and will work properly
+            } else if(typeof(id) === "number"){
+                console.log(id)
+            }
+        }
