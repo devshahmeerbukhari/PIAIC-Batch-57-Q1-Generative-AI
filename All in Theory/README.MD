@@ -193,7 +193,7 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
                         }
                     }
 
-# Chalk
+# Chalk (yet to study in depth)
     - npm install chalk
     - const chalk = require('chalk');
         console.log(chalk.bold.italic.yellow("Hello, Yellow Chalk in blod italic style"))
