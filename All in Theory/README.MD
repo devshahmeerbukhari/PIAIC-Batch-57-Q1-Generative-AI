@@ -192,3 +192,15 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
                             "module": "commonjs"
                         }
                     }
+
+# Chalk
+    - npm install chalk
+    - const chalk = require('chalk');
+        console.log(chalk.bold.italic.yellow("Hello, Yellow Chalk in blod italic style"))
+    - Chalk comes with an easy to use composable API where you just chain and nest the styles you want.
+    - Chalk is a popular library for styling terminal output in Node.js. The "composable API" refers to a way of combining styles together in a flexible and readable way.
+    - Think of it like building with LEGO blocks! You can create complex styles by combining smaller, individual styles.
+    - Chalk's composable API makes it easy to create complex styles by combining smaller styles in a readable and flexible way!
+    - Chain styles and call the last one as a method with a string argument. Order doesn't matter, and later styles take precedent in case of a conflict. This simply means that chalk.red.yellow.green is equivalent to chalk.green.
+
+## Chalk Levels
