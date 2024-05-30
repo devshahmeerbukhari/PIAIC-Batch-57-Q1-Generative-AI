@@ -213,6 +213,7 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
             //Property 'toUpperCase' does not exist on type 'number'.
         }
     - And if you check the type of the variable, then you can apply it's method
+    - Within our if check, TypeScript sees typeof id === "number" and understands that as a special form of code called a type guard. TypeScript follows possible paths of execution that our programs can take to analyze the most specific possible type of a value at a given position. It looks at these special checks (called type guards) and assignments, and the process of refining types to more specific types than declared is called narrowing. In many editors we can observe these types as they change, and we’ll even do so in our examples.
     - For Example:
         function printId(id: number | string){
             if(typeof(id) === "string"){
@@ -222,3 +223,17 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
                 console.log(id)
             }
         }
+    - In TypeScript, narrowing refers to the process of refining the type of a value within a specific scope. This is typically done using control flow statements like if, else, switch, and typeof checks, which allow you to assert additional information about a value's type based on runtime conditions.
+    - let age: number | "died" | "unknown";
+        age = 90;//OK
+        age = "died";//OK
+        age = "unknown";//OK
+        age = "living";//Error
+    - You can also define a type alias
+        type RawData = boolean | number | string | null | undefined;
+        let data: RawData;
+        data = "Hello"      //OK
+        data = 10           //OK
+        data = true         //OK
+        data = null         //OK
+        data = undefined    //OK
