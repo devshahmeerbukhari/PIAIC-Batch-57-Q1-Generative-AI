@@ -237,3 +237,4 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
         data = true         //OK
         data = null         //OK
         data = undefined    //OK
+    - 
