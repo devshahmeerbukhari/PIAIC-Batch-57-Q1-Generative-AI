@@ -1,5 +1,5 @@
 # Primitive Datatypes
-    - In js, Primitive values or data types is data that is not an Object and has no methods and ot properties.
+    - In js, Primitive values or data types is data that is not an Object and has no methods and or properties.
     - It can hold only single value
     - primitive data types—like numbers, strings, and booleans—do not inherently hold properties or methods because they are not objects
     - they appear to have methods and properties due to a feature called boxing.

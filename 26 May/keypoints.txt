@@ -1,12 +1,12 @@
-Structal Typing
+Structural typing
 - Object Literals or Fresh Object: Initially assignment values should have the same structure
     var x: {foo: number}
     x = {foo: 1, bar: 10} => Error will occure
     var y: {foo: number, bar: 10}
     x = y =>Here no error will occure
-- Stail Object of interfaces: Swaping values afer declaration
+- stale object Object of interfaces: Swaping values afer declaration
 
-- Following is the Object destrustion
+- Following is the Object destruction
 myType = {
     name: "Shahmeer",
     age: 10
@@ -14,9 +14,9 @@ myType = {
 const {name} = myType
 
 
-- Access the values of Object with object.entries
+- Access the values of object with Object.entries(ObjectName)
 
-- Permiataticve Datatypes: 
+- Primitive/Non-Primitive Datatypes: 
 - Special Datatypes: Any, unknown, never
 
 - Typecasting
@@ -25,3 +25,20 @@ const {name} = myType
         - using as (var1 as string)
 
 - Enum
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+When you assign a value to a variable, TypeScript checks if the assigned value is a subtype of the declared type. In your example:
+let x: { foo: number }
+x = { foo: 1, bar: 10 } // Error: Type '{ foo: number; bar: number; }' is not assignable to type '{ foo: number; }'.
+The assigned object { foo: 1, bar: 10 } is not a subtype of the declared type { foo: number } because it has an extra property bar that is not present in the declared type.
+However, when you assign the value to y first:
+let y = { foo: 12, bar: "Hello" }
+x = y
+TypeScript performs a different type of checking called "assignability" checking. It checks if the type of y is assignable to the type of x. In this case, the type of y is { foo: number, bar: string } and the type of x is { foo: number }.
+Since { foo: number, bar: string } is a supertype of { foo: number } (it has all the properties of { foo: number } plus an extra one), the assignment is allowed.
+So, in short, the reason why the second assignment doesn't throw an error is because TypeScript is checking the assignability of the types, not the exact match of the types.
+It's worth noting that this behavior is specific to TypeScript and may not be the same in other languages.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -15,7 +15,7 @@ let sphare: Sphare = {
 }
 
 //sphare = ball    Here it till show error because stracture of both object is not same
-ball = sphare   //Will nor show error because structure is same, and other keys will be optional...    And this is known as Stail Object
+ball = sphare   //It will not throw error because structure is same, and other keys will be optional...    And this is known as Stail Object
 //In stail object we always see the structure of left side object
 //It means all the required keys of left hand side's object should be in the object of iright hand side
 
