@@ -313,3 +313,22 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
                 },
                 name: "My Best Book"
             }
+# Intersection types
+    - When we create two interfaces and combine both of them, this process is known as Intersection types
+    -   interface Student {
+            studentId: number,
+            studentName: string
+        }
+        interface Teacher {
+            teacherID: number,
+            teacherName: string
+        }
+        type intersectedType = Student & Teacher
+        let obj: intersectedType = {
+            studentId: 1,
+            studentName: "Shahmeer",
+            teacherID: 2,
+            teacherName: "Ali"
+        }
+        console.log(obj.teacherName)
+        console.log(obj)
