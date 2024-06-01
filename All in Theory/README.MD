@@ -237,4 +237,63 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
         data = true         //OK
         data = null         //OK
         data = undefined    //OK
-    - 
+    - You can even combine them
+        type id = number | string
+        type id2 = id | null | undefined;
+    
+# Object Types:
+    - Type Aliases:
+        - Are used to assign the type of any attribute or object
+        - type datatype = number | string
+            let id: datatype = 1    //OK
+            let id: datatype = "1"  //OK
+        - type Person = {
+            name: string
+        }
+        let person1: Person = {
+            name = "Ali"
+        }
+        - but we can not add more fields or attributes if once type is defined,
+        - For Example:
+            type Person = {
+                age: number
+            }
+             // Error: Duplicate identifier 'Person'.
+    - Interface:
+        - Interface is used to define the structure of an object:
+        - For Example:
+        interface User{
+            name: string
+        }
+        let user1: User = {
+            name: "Ahamd"
+        }
+        - In interface we can add more fields or attributes if once interface is defined,
+        - For exampls:
+            interface User{
+                age: number
+            }
+    
+    - Anonymous
+        let teacher : {name: string, exp: number} = {
+            name: "Zeeshan",
+            exp: 10
+        }
+    - Aliased Object Type
+        type Student = {
+            name: string,
+            age?: number
+        }
+
+        let student: Student = {
+            name: "Hira",
+            age: 30
+        }
+    - Interfaces
+        interface Manager {
+            name: string,
+            subordiates?: number    // question marks means it is optional
+        }
+        let storeManager: Manager = {
+            name: "Bilal"
+        }
