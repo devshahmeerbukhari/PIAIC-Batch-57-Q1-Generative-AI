@@ -297,3 +297,19 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
         let storeManager: Manager = {
             name: "Bilal"
         }
+        - Nested Object Example:
+            type Author = {
+                firstName: string;
+                lastName: string;
+            };
+            type Book = {
+                author: Author;
+                name: string;
+            };
+            const myBook : Book = {
+                author: {
+                    firstName: "Shahmeer",
+                    lastName: "Bukahri"
+                },
+                name: "My Best Book"
+            }
