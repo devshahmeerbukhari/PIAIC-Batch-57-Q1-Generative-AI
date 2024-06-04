@@ -2,6 +2,4 @@
 Your output should look something like the following, including the quotation marks:
 Albert Einstein once said, “A person who never made a mistake never tried anything new.”*/
 
-let authorName: string = "ALbert Einstein"
-let quote: string = "A person who never made a mistake never tried anything new."
-console.log(`${authorName} once said, "${quote}"`)
+console.log(`Albert Einstein once said, “A person who never made a mistake never tried anything new.”`)
