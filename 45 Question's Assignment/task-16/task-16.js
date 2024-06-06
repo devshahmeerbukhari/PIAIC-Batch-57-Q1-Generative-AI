@@ -5,6 +5,7 @@
 • Add one new guest to the middle of your array.
 • Use append() to add one new guest to the end of your list.
 • Print a new set of invitation messages, one for each person in your list.*/
+Object.defineProperty(exports, "__esModule", { value: true });
 let friendsForDinner2 = ["Abdullah", "Rahim", "Muhamman", "Taiyab"];
 //Adding element at thr start of the array:
 friendsForDinner2 = ["Ahmed", ...friendsForDinner2];

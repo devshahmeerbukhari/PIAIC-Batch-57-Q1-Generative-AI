@@ -7,3 +7,5 @@ let friendsForDinner: string[] = ["Abdullah", "Rahim", "Muhamman", "Taiyab"]
 friendsForDinner.forEach((friend) => {
     console.log(`${friend}, I Invited you for a Dinner!`)
 })
+
+export default friendsForDinner
