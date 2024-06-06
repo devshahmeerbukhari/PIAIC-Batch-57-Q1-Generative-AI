@@ -44,3 +44,5 @@ Your output should simply be four lines with the number 8 appearing once on each
 • Reverse the order of your list again. Print the list to show it’s back to its original order.
 • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
