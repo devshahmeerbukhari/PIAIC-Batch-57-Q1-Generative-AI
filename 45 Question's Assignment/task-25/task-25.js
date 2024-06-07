@@ -14,3 +14,4 @@ else if (alien_color.toLowerCase() === "red") {
     //no output
 }
 console.log(`${alien_color.toLowerCase() === "green" ? 'PLayer Just earned 5 point' : 'earned nothing'}`);
+exports.default = alien_color;
