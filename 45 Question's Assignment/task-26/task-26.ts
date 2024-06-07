@@ -3,7 +3,7 @@
 • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
 • Write one version of this program that runs the if block and another that runs the else block.*/
 
-import alien_color from "../task-25/task-25";
+let alien_color2: string = "Green"
 function check(alien_color: string): void{
     if (alien_color.toLowerCase() === "green"){
         console.log("You have earned 5 points")
@@ -11,5 +11,6 @@ function check(alien_color: string): void{
         console.log("You have earned 10 points")
     }
 }
-check(alien_color)
-check("Yellow")
+check(alien_color2)
+alien_color2 = "Yellow"
+check(alien_color2)
