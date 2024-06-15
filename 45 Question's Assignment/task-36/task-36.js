@@ -6,6 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function make_shirt(size, message) {
     console.log(`Size of a function is: ${size}\nMessage printed on the shirt is: ${message}`);
 }
-let size = 42;
+let size = "Medium";
 let message = "Nothing is impossible!";
 make_shirt(size, message);
