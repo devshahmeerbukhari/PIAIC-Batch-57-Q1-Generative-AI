@@ -8,7 +8,6 @@ greater than or equal to, and less than or equal to
 • Tests using "and" and "or" operators
 • Test whether an item is in a array
 • Test whether an item is not in a array*/
-Object.defineProperty(exports, "__esModule", { value: true });
 let name = "ShaHmeEr BUKhaRi";
 //• Tests using the lower case function
 console.log(`${name.toLowerCase() === 'shahmeer bukhari' ? 'Same' : 'Not Same'}`);

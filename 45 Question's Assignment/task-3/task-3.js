@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /*3. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase,
 uppercase, and titlecase(also known as headline case).*/
 const titleCase = (name3) => {

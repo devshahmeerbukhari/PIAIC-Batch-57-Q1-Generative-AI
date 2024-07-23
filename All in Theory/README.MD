@@ -332,3 +332,10 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
         }
         console.log(obj.teacherName)
         console.log(obj)
+
+# Explict Casting
+    - You explicitly change the data type of one's vaiable
+        - For example:
+        let name: unknown = "Shahmeer"
+        console.log((name as strign).length);
+        console.log((<string> name).length);
