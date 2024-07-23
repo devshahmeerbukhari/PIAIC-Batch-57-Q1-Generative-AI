@@ -339,3 +339,25 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
         let name: unknown = "Shahmeer"
         console.log((name as strign).length);
         console.log((<string> name).length);
+
+# Object Literal
+    Is used to define the structure of an any object
+    - interface Shape {
+        diameter: number;
+    }
+    - interface Shape1{
+        diagameter: number,
+        radius: number
+    }
+    let circle: Shape {
+        diagram: 10
+    }
+    let obj2: Shape1{
+        diagram: 20,
+        radius: 12
+    }
+    circle = obj2   //Its okay, because all attributes of circle is in obj2, also with extra
+                    //attributes
+    obj2 = circle   //It will throw error, cuz circle not have all the attributes of obj2
+
+
