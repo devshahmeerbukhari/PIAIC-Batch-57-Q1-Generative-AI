@@ -341,6 +341,38 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
         console.log((<string> name).length);
 
 # Object Literal
+    Basic Object Literals:
+        let user = {
+            firstname: "Shahmeer",
+            lastname: "Bukhari",
+            age: 21
+        }
+    Methods in Object:
+        let user = {
+            firstName: "shahmeer",
+            lastName: "bukhari",
+            age: 21,
+            getFullName: function(){
+                return `${this.firstName} ${this.lastName}`;
+            }
+        }
+    Type Annotation:
+        type User = {
+            firstName: string,
+            lastName: string,
+            age: number,
+            getFullName: () => stirng
+        }
+        let user: User = {
+            firstName: "Shahmeeer",
+            lastName: "Bukhari",
+            age: 21,
+            getFullName: function(){
+                return `${this.firstName} ${this.lastName}`;
+            }
+        }
+
+# Interface
     Is used to define the structure of an any object
     - interface Shape {
         diameter: number;
