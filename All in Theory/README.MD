@@ -340,6 +340,10 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
         console.log((name as strign).length);
         console.log((<string> name).length);
 
+        let name2: string = "123"
+        console.log(name2 as unknown as number)
+        console.log(<number>(<unknown> name2))
+
 # Object Literal
     Basic Object Literals:
         let user = {
