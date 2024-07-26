@@ -392,4 +392,23 @@ In TypeScript, modules are a powerful feature that helps in organizing and struc
                     //attributes
     obj2 = circle   //It will throw error, cuz circle not have all the attributes of obj2
 
+# Any, Unknown, Never
+    We use any where we can have the data of any data type, and we use unknown where we don't know the type of of coming data, and we use never in exceptional error handelling..
+    -Any
+    let val: any = "Shahmeer"       //Okay
+    val = 123                       //Okay
+    val = true                      //Okay
+    let val1: string = val          //Okay
 
+    -Unknown
+    let val2: unknown = "Shahmeer"  //Okay
+    val2 = 123                      //Okay
+    val2 = val                      //Okay
+    val2 = "Shahmeer"               //Okay
+    let val3: string = val2         //Error, because if we know the datatype is of string when we can not assigne the value of unknown
+
+    -Never
+    function errorr(){
+        return error("Somthing Failte!)
+    }
+    errorr()
